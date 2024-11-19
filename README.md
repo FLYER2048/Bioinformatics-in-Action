@@ -21,8 +21,7 @@ Your **task** is to **determine which antibiotics may be effective** in treating
 
 For the purposes of this assignment, you will focus on a single bacterial species (*Escherichia coli*), and a specific set of antibiotic resistance determinants, as detailed in the following table:
 
-|Resistance class
-抗生素抗性分类|Gene|Notes|
+|Resistance class 抗生素抗性分类|Gene|Notes|
 |-|-|-|
 |Cephalosporin 头孢菌素|$bla_{CTX-M-14}$ / $bla_{CTX-M-15}$ / $bla_{CTX-M-27}$|Resistance conferred by gene presence $^a$|
 |Macrolide 大环内酯类|*mph*(A)|Resistance conferred by gene presence|
