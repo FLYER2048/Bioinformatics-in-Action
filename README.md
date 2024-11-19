@@ -1,6 +1,4 @@
-![image.png](https://flowus.cn/preview/9e792e1f-f2b9-47ba-a856-72e62c1799bb)
-
-**Bioinformatics in Action**
+##Bioinformatics in Action
 
 One application of bioinformatics is in the use of whole-genome sequencing for clinical microbiology diagnostics. Bacteria from an infection can be isolated and sequenced. The genomic data can then be queried for specific features in order to guide the most effective treatment. These features include antibiotic resistance genes, as well as markers that identify which species the bacterial isolate belongs to. This information can then be used to inform the most appropriate antibiotic(s) for treating the infection.
 
@@ -26,14 +24,10 @@ For the purposes of this assignment, you will focus on a single bacterial specie
 |Resistance class
 抗生素抗性分类|Gene|Notes|
 |-|-|-|
-|Cephalosporin
-头孢菌素|$bla_{CTX-M-14}$ /$bla_{CTX-M-15}$ /$bla_{CTX-M-27}$|Resistance conferred by gene presence$^a$|
-|Macrolide
-大环内酯类|*mph*(A)|Resistance conferred by gene presence|
-|Aminoglycoside
-氨基糖苷类|*aadA5*|Resistance conferred by gene presence|
-|Fluoroquinolone
-氟喹诺酮|*gyrA*|Resistance conferred by specific mutations$^b$|
+|Cephalosporin 头孢菌素|$bla_{CTX-M-14}$ /$bla_{CTX-M-15}$ /$bla_{CTX-M-27}$|Resistance conferred by gene presence$^a$|
+|Macrolide 大环内酯类|*mph*(A)|Resistance conferred by gene presence|
+|Aminoglycoside 氨基糖苷类|*aadA5*|Resistance conferred by gene presence|
+|Fluoroquinolone 氟喹诺酮|*gyrA*|Resistance conferred by specific mutations$^b$|
 
 a. Resistance is conferred by the presence of any one of these genes (i.e. $bla_{CTX-M-14}$ or $bla_{CTX-M-15}$ or $bla_{CTX-M-27}$ or any combination thereof).
 
