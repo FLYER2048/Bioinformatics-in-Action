@@ -1,4 +1,4 @@
-**Bioinformatics in Action**
+# Bioinformatics in Action
 
 One application of bioinformatics is in the use of whole-genome sequencing for clinical microbiology diagnostics. Bacteria from an infection can be isolated and sequenced. The genomic data can then be queried for specific features in order to guide the most effective treatment. These features include antibiotic resistance genes, as well as markers that identify which species the bacterial isolate belongs to. This information can then be used to inform the most appropriate antibiotic(s) for treating the infection.
 
@@ -57,3 +57,70 @@ You will give your **presentation** *live during class*, and provide an *online 
 **Weighting**: 20%
 
 **Transcript Online Submission Due**: 18/11/2024, 10:00pm.
+
+---
+
+# SH File Overview
+
+This Bash script is designed for processing BIA (antibiotic resistance genes) group data. The main steps of the script include data preparation, species identification, genome assembly, mutation detection, and BLAST alignment for resistance genes. Below is a detailed explanation of each step:
+
+## 1. Create Directory Structure
+
+- **Create Main Directory**: Creates a folder named `BIA_groups` in the user's home directory.
+- **Loop to Create Group Directories**: For each group (1 to 11), it creates corresponding subfolders (e.g., `group_1`, `group_2`, ...) and within each group, the following directories are created:
+  - `input_reads`: To store raw sequencing data.
+  - `reference_sequence`: To store reference sequence files.
+  - `kraken_db`: To store the Kraken database.
+  - `FastQC`: To store quality control results.
+  - `kraken_output`: To store Kraken classification results.
+  - `aligned_reads`: To store the sorted BAM files after alignment.
+  - `assemblies`: To store the assembly results of the genomes.
+  - `assembled_db`: To store the BLAST database of the assembled results.
+  - `assembled_results`: To store results of the BLAST analysis for resistance genes.
+
+## 2. Data Copying
+
+The script copies the sample sequencing data (`.gz` files) and resistance gene/reference sequence files (`.fasta` files) from specified paths into their respective folders.
+
+## 3. Species Identification
+
+- **Activate Kraken Environment**: The script activates the Kraken environment using `conda` for species identification.
+- **Kraken Analysis**:
+  - For each sample, `kraken2` is used to perform species identification and generate classification reports.
+  - `bracken` is used to process the Kraken reports for species abundance analysis.
+  - The first few lines of the results for each sample are saved in a text file named according to the sample number.
+
+## 4. Genome Assembly
+
+- The script uses the `spades.py` tool to assemble the sequencing data for each sample, generating the assembled genome files.
+
+## 5. Mutation Detection
+
+- **BWA Alignment**:
+  - The `bwa` tool is used to align the sample sequencing data with the reference genome, producing sorted BAM files.
+  - `samtools` is used to index the BAM files.
+  
+- **VCF Variant Calling**:
+  - The `bcftools` tool is used to detect mutations in the `gyrA` gene, and variant information is saved in a text file.
+
+## 6. Antibiotic Resistance Gene BLAST Detection
+
+- **Create BLAST Database**: A BLAST database is created for the assembled genomes of each sample.
+- **Resistance Gene Alignment**:
+  - Each sample undergoes BLAST alignment, comparing against predefined antibiotic resistance gene sequences, with results stored in a text file.
+
+## 7. Cleanup
+
+After completing all analyses, the script removes temporary folders to save space.
+
+## Environment Requirements
+
+- The script requires the installation of `conda` and the following tools:
+  - Kraken
+  - SPAdes
+  - BWA
+  - SAMtools
+  - BCFtools
+  - BLAST
+
+This script enhances the efficiency of processing microbiome data through automation, facilitating subsequent analyses.
