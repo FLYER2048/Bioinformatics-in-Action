@@ -64,6 +64,18 @@ You will give your **presentation** *live during class*, and provide an *online 
 
 Copy BIA.sh into your work directory, then run `BIA.sh`.
 
+You can use `bash` command to run the shell.
+
+```
+bash BIA.sh
+```
+
+If you want to run the shell in backend (not interrupted by logging out), you can use `nohup` command:
+
+```
+nohup bash BIA.sh &
+```
+
 # SH File Overview
 
 This Bash script is designed for processing BIA (antibiotic resistance genes) group data. The main steps of the script include data preparation, species identification, genome assembly, mutation detection, and BLAST alignment for resistance genes. Below is a detailed explanation of each step:
