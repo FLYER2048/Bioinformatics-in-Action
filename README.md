@@ -1,4 +1,4 @@
-# Bioinformatics in Action
+# Bioinformatics in Action - Part 1: Group oral presentation
 
 One application of bioinformatics is in the use of whole-genome sequencing for clinical microbiology diagnostics. Bacteria from an infection can be isolated and sequenced. The genomic data can then be queried for specific features in order to guide the most effective treatment. These features include antibiotic resistance genes, as well as markers that identify which species the bacterial isolate belongs to. This information can then be used to inform the most appropriate antibiotic(s) for treating the infection.
 
