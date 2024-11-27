@@ -1,0 +1,10 @@
+name                    taxonomy_id  taxonomy_lvl  kraken_assigned_reads  added_reads  new_est_reads  fraction_total_reads
+Escherichia coli        562          S             121641                 444451       566092         0.99089
+Escherichia albertii    208962       S             127                    29           156            0.00027
+Escherichia fergusonii  564          S             115                    106          221            0.00039
+Escherichia marmotae    1499973      S             77                     20           97             0.00017
+Escherichia sp. E4742   2044467      S             57                     23           80             0.00014
+Escherichia sp. SCLE84  2725997      S             2                      63           65             0.00011
+Citrobacter freundii    546          S             29                     45           74             0.00013
+Citrobacter braakii     57706        S             3                      18           21             0.00004
+Citrobacter werkmanii   67827        S             1                      1            2              0.00000

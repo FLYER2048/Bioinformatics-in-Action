@@ -1,0 +1,10 @@
+name                                     taxonomy_id  taxonomy_lvl  kraken_assigned_reads  added_reads  new_est_reads  fraction_total_reads
+Citrobacter portucalensis                1639133      S             10328                  194865       205193         0.41994
+Citrobacter freundii                     546          S             9266                   77200        86466          0.17696
+Citrobacter youngae                      133448       S             401                    8029         8430           0.01725
+Citrobacter werkmanii                    67827        S             356                    2476         2832           0.00580
+Citrobacter braakii                      57706        S             288                    9911         10199          0.02087
+Citrobacter sp. BIDMC107                 1686384      S             31                     1095         1126           0.00231
+Citrobacter freundii complex sp. CFNIH3  2077147      S             20                     1712         1732           0.00355
+Citrobacter freundii complex sp. CFNIH2  2066049      S             9                      34           43             0.00009
+Citrobacter sedlakii                     67826        S             2                      8            10             0.00002

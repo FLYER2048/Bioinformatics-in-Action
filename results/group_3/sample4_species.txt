@@ -1,0 +1,10 @@
+name                                     taxonomy_id  taxonomy_lvl  kraken_assigned_reads  added_reads  new_est_reads  fraction_total_reads
+Enterobacter hormaechei                  158836       S             22909                  462055       484964         0.86493
+Enterobacter cloacae                     550          S             1122                   1453         2575           0.00459
+Enterobacter sp. BIDMC100                1686399      S             157                    7041         7198           0.01284
+Enterobacter cloacae complex sp.         2027919      S             156                    5214         5370           0.00958
+Enterobacter cloacae complex sp. ECL414  2912628      S             66                     1192         1258           0.00224
+Enterobacter cloacae complex sp. ECL78   2850492      S             23                     3497         3520           0.00628
+Enterobacter sp. BIDMC 29                1329841      S             4                      40           44             0.00008
+Enterobacter cloacae complex sp. ECL72   2850078      S             2                      192          194            0.00035
+Enterobacter sp. MGH 3                   1329812      S             1                      24293        24294          0.04333

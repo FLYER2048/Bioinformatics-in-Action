@@ -1,0 +1,10 @@
+name                        taxonomy_id  taxonomy_lvl  kraken_assigned_reads  added_reads  new_est_reads  fraction_total_reads
+Escherichia coli            562          S             113232                 467533       580765         0.99050
+Escherichia fergusonii      564          S             60                     32           92             0.00016
+Escherichia albertii        208962       S             58                     51           109            0.00019
+Escherichia marmotae        1499973      S             49                     14           63             0.00011
+Escherichia sp. E4742       2044467      S             28                     12           40             0.00007
+Escherichia sp. SCLE84      2725997      S             1                      38           39             0.00007
+Klebsiella pneumoniae       573          S             65                     709          774            0.00132
+Klebsiella quasipneumoniae  1463165      S             11                     36           47             0.00008
+Klebsiella variicola        244366       S             5                      9            14             0.00002
